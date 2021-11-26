@@ -1,0 +1,10 @@
+.page {
+  background-color: #000;
+  padding: 45px calc(50vw - 1280px/2) 60px calc(50vw - 1280px/2);
+}
+
+@media screen and (max-width: 1280px) {
+  .page {
+    padding: 45px 0 60px 0;
+  }
+}
