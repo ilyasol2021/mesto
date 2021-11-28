@@ -10,15 +10,76 @@
 <body>
   <div class="page">
     <header class="header">
-      <img class="logo" src="./images/logo/logo.svg" alt="Логотип">
+      <img class="header__logo" src="./images/logo/logo.svg" alt="Логотип">
       <div class="header__line"></div>
     </header>
     <main class="content">
-
+      <section class="profile">
+        <img class="profile__avatar" src="./images/avatar/avatar.jpg" alt="Аватар"/>
+        <div class="profile__info">
+          <div class="button button_edit"></div>
+          <h2 class="profile__name">Жак-Ив Кусто</h2>
+          <p class="profile__description">Исследователь океана</p>
+        </div>
+        <div class="button button_add"></div>
+      </section>
+      <section class="elements">
+        <div class="element">
+          <img class="element__image" src="./images/elements/castle.jpg" alt="Замок">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Карачаевск</h3>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/elements/sunset.jpg" alt="Закат">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Гора Эльбрус</h3>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/elements/rocks.jpg" alt="Горы">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Домбай</h3>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/elements/sunset.jpg" alt="Закат">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Гора Эльбрус</h3>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/elements/rocks.jpg" alt="Горы">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Домбай</h3>
+          </div>
+        </div>
+        <div class="element">
+          <img class="element__image" src="./images/elements/castle.jpg" alt="Замок">
+          <div class="element__info">
+            <img class="element__like" src="./images/like/like.svg" alt="Лайк">
+            <h3 class="element__title">Карачаево-Черкесия</h3>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
     </footer>
+    <div class="page__overlay"></div>
+    <form class="form">
+      <img class="button button_close" src="./images/button_close/close.svg" alt="Закрыть"/>
+      <h2 class="form__title">Редактировать профиль</h2>
+      <input type="text" class="input input__name" value="Жак-Ив Кусто">
+      <input type="text" class="input input__description" value="Исследователь океана">
+      <button type="submit" class="button_submit">Сохранить</button>
+    </form>
   </div>
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>

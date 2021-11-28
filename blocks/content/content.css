@@ -1,0 +1,24 @@
+.content {
+  margin: 40px 200px 65px 200px;
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    margin-left: calc((100vw - 880px) / 2);
+    margin-right: calc((100vw - 880px) / 2);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    margin-left: calc((100vw - 600px) / 2);
+    margin-right: calc((100vw - 600px) / 2);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .content {
+    margin-left: calc((100vw - 282px) / 2);
+    margin-right: calc((100vw - 282px) / 2);
+  }
+}
