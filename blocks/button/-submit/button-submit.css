@@ -1,4 +1,4 @@
-.button_submit {
+.button-submit {
   width: 360px;
   height: 45px;
   background-color: #000000;
@@ -13,13 +13,13 @@
   text-align: center;
 }
 
-.button_submit:hover {
+.button-submit:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 
 @media screen and (max-width: 660px) {
-  .button_submit {
+  .button-submit {
     width: 240px;
   }
 }
