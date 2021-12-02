@@ -1,19 +1,21 @@
-const btnEdit = document.querySelector('.button_edit');
-const overlay = document.querySelector('.page__overlay');
+const btnEdit = document.querySelector('.profile__button-edit');
+const overlay = document.querySelector('.popup');
 const form = document.querySelector('.form');
-const nameInput = document.querySelector('.input-name');
-const jobInput = document.querySelector('.input-description');
-const btnClose = document.querySelector('.button_close');
+const nameInput = form.querySelector('.form__input_name');
+const jobInput = document.querySelector('.form__input_description');
+const btnClose = document.querySelector('.form__button-close');
 const pname = document.querySelector('.profile__name');
 const description = document.querySelector('.profile__description');
 
 function openDialog() {
-  overlay.classList.add('page__overlay_active');
+  overlay.classList.add('popup_active');
   form.classList.add('form_active');
+  nameInput.value = pname.textContent;
+  jobInput.value = description.textContent;
 }
 
 function closeDialog() {
-  overlay.classList.remove('page__overlay_active');
+  overlay.classList.remove('popup_active');
   form.classList.remove('form_active');
 }
 
@@ -27,15 +29,11 @@ function formSubmitHandler (evt) {
 	// Получите значение полей из свойства value
   nameValue = nameInput.value;
   jobValue = jobInput.value;
-  console.log(nameValue);
-  console.log(jobValue);
 	// Выберите элементы, куда должны быть вставлены значения полей
 
 	// Вставьте новые значения с помощью textContent
   pname.textContent = nameValue;
   description.textContent = jobValue;
-  console.log(pname.textContent);
-  console.log(description.textContent);
   closeDialog();
 }
 
