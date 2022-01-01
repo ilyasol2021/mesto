@@ -1,5 +1,6 @@
 const btnEdit = document.querySelector('.profile__button-edit');
-const overlay = document.querySelector('.popup');
+const popupEdit = document.querySelector('#popup-edit');
+const popupAdd = document.querySelector('#popup-add');
 const form = document.querySelector('.form');
 const nameInput = form.querySelector('.form__input_name');
 const jobInput = document.querySelector('.form__input_description');
@@ -45,15 +46,15 @@ function addElement(name, link) {
   elementsContainer.prepend(element);
 }
 
-function openDialog() {
-  overlay.classList.add('popup_active');
+function openDialog(popup) {
+  popupEdit.classList.add('popup_active');
   form.classList.add('form_active');
   nameInput.value = pname.textContent;
   jobInput.value = description.textContent;
 }
 
-function closeDialog() {
-  overlay.classList.remove('popup_active');
+function closeDialog(popup) {
+  popupEdit.classList.remove('popup_active');
   form.classList.remove('form_active');
 }
 
@@ -72,7 +73,7 @@ function formSubmitHandler (evt) {
 	// Вставьте новые значения с помощью textContent
   pname.textContent = nameValue;
   description.textContent = jobValue;
-  closeDialog();
+  closeDialog(popupEdit);
 }
 
 // Прикрепляем обработчик к форме:
